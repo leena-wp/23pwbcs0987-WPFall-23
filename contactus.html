@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Body<span>Lift</span></a>
+        <div class='bx bx-menu-alt-left' id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>         
+        </ul>
+        <div class="top-btn">
+            <a href="#" class="nav-btn">Join Us</a>
+        </div>
+    </header>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+     });
+    </script>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Fill in the form below</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email/Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Age" placeholder="Your Age"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa fa-phone"></i> 091-2212936</p>
+                    <p><i class="fa fa-envelope"></i> bodyliftness360@gmail.com</p>
+                    <p><i class="fa fa-map-marker"></i>Opposite to UET chart wala madinah market university of peshawar,Peshawar Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

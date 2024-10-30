@@ -1,0 +1,82 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Photos</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Body<span>Lift</span></a>
+        <div class='bx bx-menu-alt-left'id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+ </ul>
+ <div class="top-btn">
+    <a href="#" class="nav-btn">Join Us</a>
+ </div>
+    </header>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+     });
+    </script>
+
+    <section class="photo-gallery">
+        <h1>Transformation Stories & Workout Techniques</h1>
+        <p>Explore inspiring fitness journeys and learn new workout techniques.</p>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="john.mp4.jpg" alt="Transformation 1">
+                <div class="caption">Before & After: Jack's Transformation</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photo2hit.avif" alt="Workout Technique 1">
+                <div class="caption">Hit Training in Progess</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="sarah.mp4.jpg" alt="Transformation 2">
+                <div class="caption">Emma's Weight Loss Journey</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="strength.mp4" alt="Workout Technique 2">
+                <div class="caption">Strength Training for trainee</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="musclegain.mp4.jpg" alt="Transformation 3">
+                <div class="caption">Muscle Gain: Joe's Progress</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="coreworkout.mp4" alt="Workout Technique 3">
+                <div class="caption">Core&Core Workout Techniques</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo 1.mp4" alt="Transformation 4">
+                <div class="caption">Maxi's Fitness Journey</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="yoga.avif" alt="Workout Technique 4">
+                <div class="caption">Eco-friendly Training Sessions</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+    

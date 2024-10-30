@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <a href="#home" class="logo">Body<span>Lift</span></a>
+        <div class='bx bx-menu-alt-left'id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>           
+ </ul>
+
+ <div class="top-btn">
+    <a href="#" class="nav-btn">Join Us</a>
+
+ </div>
+    </header>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+    
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+     });
+    </script>
+    <section class="workout-section">
+        <h1>Workout Routines</h1>
+        <div class="workout-navigation">
+            <button class="nav-btn" onclick="showRoutine(1)">Routine 1</button>
+            <button class="nav-btn" onclick="showRoutine(2)">Routine 2</button>
+            <button class="nav-btn" onclick="showRoutine(3)">Routine 3</button>
+        </div>
+
+        <div class="routine active" id="routine-1">
+            <h2>FullBody Strength Workout</h2>
+            <p>Boost your strength with exercises targeting every major muscle group.</p>
+            <img src="img7.mp4.jpg" alt="Strength Training">
+            <ul>
+                <li><strong>Exercise:</strong> Deadlifts  4 sets, 8 reps</li>
+                <li><strong>Exercise:</strong> Bench Press  4 sets, 8 reps</li>
+                <li><strong>Exercise:</strong> Squats  3 sets, 10 reps</li>
+            </ul>
+        </div>
+        <div class="routine" id="routine-2">
+            <h2>HitNHit Workout</h2>
+            <p>High-intensity workout to boost your metabolism and burn calories.</p>
+            <img src="img8.mp4.jpg" alt="HIIT Workout">
+            <ul>
+                <li><strong>Exercise:</strong> Burpees 5 sets, 15 reps</li>
+                <li><strong>Exercise:</strong> High Knees  3 sets, 1 minute</li>
+                <li><strong>Exercise:</strong> Jump Rope 3 sets, 2 minutes</li>
+            </ul>
+        </div>
+
+        <div class="routine" id="routine-3">
+            <h2>Cardio-Friendly Workout</h2>
+            <p>Burn calories and strengthen your core with these effective exercises.</p>
+            <img src="img9.mp4.mp4" alt="Cardio Workout">
+            <ul>
+                <li><strong>Exercise:</strong> Plank Hold 3 sets, 30 sec</li>
+                <li><strong>Exercise:</strong> Bicycle Crunches 4 sets, 20 reps</li>
+                <li><strong>Exercise:</strong> Mountain Climbers  3 sets, 1 minute</li>
+            </ul>
+        </div>
+</section>
+<script>
+    function showRoutine(routineNumber) {
+        const routines = document.querySelectorAll('.routine');
+        routines.forEach(routine => routine.classList.remove('active'));
+        document.getElementById(`routine-${routineNumber}`).classList.add('active');
+
+}
+</script>
+
+</body>
+</html>
